@@ -1,0 +1,288 @@
+.navbar {
+    
+    background-color: $color-primary;
+    width: 90vw;
+    font-family: $font-sahel;
+    font-size: 1.2rem;
+    z-index: 1000;
+
+    &-nav li a{
+        text-decoration: none;
+        color: $color-grey;
+        line-height: 30px;
+
+        &:hover {
+            color: $color-orange;
+        }
+    }
+
+    & .btn-orange {
+      background-color: $color-orange;
+      color: $color-primary;
+      width: 11vw;
+      height: 8vh;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+
+}
+
+.navbar-brand img {
+    width: 120px;
+    margin-right: 50px;
+}
+
+
+@media (max-width:1200px) {
+    .navbar {
+      width: 80vw;
+      font-size: 1rem;
+    }
+  
+    .notif-bar {
+      width: 80vw;
+      right: 12rem;
+      font-size: 1.1rem;
+  }
+  .header .btn-topbar {
+      height: 7vh;
+      width: 11vw;
+      margin-left: 12.5vw;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .navbar .btn-orange {
+      width: 11vw;
+      margin-left: 12.5vw;
+    }
+  
+    .services {
+      width: 100vw;
+      height: 90vh;
+    }
+  
+    
+  .services__tabs .tab > p {
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  
+  .services__title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .services .feature__title {
+    margin: 1.4rem 0;
+    font-weight: 700;
+  }
+  
+  .services__tabs img {
+    max-width: 60px;
+  }
+
+  .corporate {
+    margin-bottom: 20vw;
+  }
+  
+  .corporate .btn-orange-lg {
+    width: 25vw;
+  }
+  
+  .drivers {
+    height: 100vh;
+    margin-bottom: 20vw;
+  }
+  .blog {
+    top: 90vw;
+    height: 99vh;
+    margin-bottom: 15vw;
+  }
+  
+  .parallax {
+    width: 100vw;
+    height: 70vh;
+  }
+  
+  .parallax img {
+    right: 5px;
+    width: 100vw;
+  }
+  
+  .parallax-mt h5 {
+    font-size: 1rem;
+    margin-left: 10vw;
+  }
+
+  .vouchers {
+    margin-bottom: 14vw;
+  }
+  
+  }
+  
+  
+  @media (max-width:992px) {
+    .navbar {
+        width: 80vw;
+    }
+    .header {
+        width: 99vw;
+    }
+    .notif-bar {
+        width: 50vw;
+        right: 8rem;
+        font-size: 0.75rem;
+    }
+    .header .btn-topbar {
+      height: 7vh;
+      width: 13vw;
+      margin-left: 15vw;
+      text-align: center;
+      font-size: 0.6rem;
+    }
+  
+    .content-container {
+      width: 55vw;
+      height: 50vh;
+      right: 7rem;
+  
+    }
+  
+    .content-container .btn-dl {
+      width: 18vw;
+      font-size: 0.55rem;
+    }
+  
+    .content-container .btn-dl-black {
+      width: 18vw;
+      font-size: 0.55rem;
+    }
+  
+    .services {
+      width: 70vw;
+      height: 90vh;
+    }
+  
+    .services__tabs .tab > p {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+    }
+    
+    
+    .services__title {
+      font-size: 1.5rem;
+      width: 18vw;
+    }
+    
+    .services .feature__title {
+      margin: 1.2rem 0;
+      font-weight: 700;
+    }
+  
+    .services .feature__text {
+      font-size: 1.1rem;
+    }
+    
+  
+    .services .feature__image img {
+      width: 20vw;
+    }
+  
+    .corporate .btn-orange-lg {
+      width: 22vw;
+    }
+    
+    .blog {
+      display: none;
+    }
+
+    .drivers{
+      top: 5vw;
+      width: 100vw;
+      height: 100vh;
+      margin-bottom: 100vw;
+  }
+
+  .cities {
+    height: 65vh;
+  }
+}
+  
+  @media (max-width:768px) {
+    .navbar {
+        width: 85vw;
+    }
+    .header {
+        width: 99vw;
+    }
+  
+    .banner img {
+      width: 100%;
+      height: 75vh;
+  }
+    .notif-bar {
+      width: 45vw;
+      right: 7rem;
+      font-size: 0.7rem;
+  }
+  .header .btn-topbar {
+    height: 6vh;
+    width: 18vw;
+    margin-left: 15vw;
+    text-align: center;
+    font-size: 0.4rem;
+  }
+  
+    .content-container {
+      width: 45vw;
+      height: 70vh;
+      right: 7rem;
+    }
+  
+    .content-container .content-text {
+      font-size: 1rem;
+    }
+  
+    .content-container .btn-dl {
+      width: 35vw;
+      font-size: 0.27rem;
+      margin-right: 50px;
+    }
+  
+    .content-container .btn-dl-black {
+      width: 35vw;
+      font-size: 0.27rem;
+      margin-right: 50px;
+    }
+  
+    .vouchers {
+      top: 170px;
+      width: 95vw;
+      height: 90vh;
+      margin-bottom: 10vw;
+    }
+  
+    .vouchers img{
+      width: 10vw;
+    }
+    
+    .vouchers-title {
+      font-size: 1.5rem;
+    }
+    
+    .vouchers-text {
+      font-size: 1rem;
+      line-height: 25px;
+    }
+
+    .drivers{
+      top: 5vw;
+      margin-bottom: 150vw;
+  }
+
+    .cities {
+      height: 60vh;
+    }
+  }
