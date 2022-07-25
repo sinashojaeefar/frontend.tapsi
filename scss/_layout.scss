@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     width: 99vw;
-    height: 20vh;
+    height: 25vh;
     margin-bottom: 220px;
     justify-content: center;
     
@@ -10,8 +10,8 @@
       color: $color-primary;
       background-color: #2266F4;
       width: 11vw;
-      height: 7vh;
-      margin: 0.3vw 6.5vw;
+      height: 6vh;
+      margin: 0.3vw 6.3vw;
       border-radius: 10px;
      
       &:hover {
@@ -22,8 +22,8 @@
 
 .banner img {
     position: relative;
-    width: 100%;
-    height: 75%;
+    width: 100vw;
+    height: 67vh;
 }
 
 #bg {
@@ -52,15 +52,16 @@
 
 .content-container {
     position: absolute;
-    width: 45vw;
-    height: 57vh;
+    width: 40vw;
+    height: 50vh;
     right: 7rem;
+    top: 6vw;
     font-family: $font-sahel;
     background: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.3) 95%);
     border-radius: 20px;
 
     & .content-title {
-      margin: 20px;
+      margin: 10px 20px;
       font-size: 3.2rem;
       font-weight: 700;
   }
@@ -84,8 +85,8 @@
 
 .img-header img{
     position: absolute;
-    width: 25vw;
-    top: 70px;
+    width: 26vw;
+    top: 140px;
     left: 100px;
 }
 
@@ -93,7 +94,7 @@
 
 .services {
     position: relative;
-    top: 150px;
+    top: 180px;
     margin-bottom: 100px;
     width: 90vw;
     height: 90vh;
@@ -103,7 +104,7 @@
 .services__tabs {
   justify-content: space-between;
   overflow: auto;
-  padding: 75px 0 15px;
+  padding: 75px 20px 15px;
 
   & a {
     display: block;
@@ -133,9 +134,10 @@
   opacity: 1;
 }
 .services__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 5px 35px;
 }
 
 .services .feature__title {
@@ -148,9 +150,9 @@
     color: #333;
     font-size: 18px;
     line-height: 32px;
-    margin: 20px 35px 50px;
+    margin: 20px 35px 30px;
     text-align: justify;
-    width: 42vw;
+    // width: 42vw;
 }
 .services .feature__image img{
   width: 40vw;
@@ -181,23 +183,25 @@
 .corporate {
 
     @include section-width;
+    
 
   &-text {
     font-size: 1.5rem;
     text-align: justify;
-    width: 38vw;
-    margin: 30px;
+    // width: 38vw;
+    padding: 5px 15px;
   }
   &-title {
     margin-top: 100px;
-    font-size: 3rem;
-    margin-right: 23px;
+    font-size: 2.5rem;
+    padding: 5px 15px;
   }
 
   & img {
-    margin-top: 100px;
-    width: 37vw;
-    margin-right: 10px
+    margin: 100px 20px;
+    width: 100%;
+    padding: 8% 12%;
+    
   }
 
   & .btn-orange-lg {
@@ -224,7 +228,12 @@
 
 .vouchers {
     @include section-width;
-
+  
+    & img {
+      margin: auto;
+      width: 100%;
+      
+    }
   &-title {
     font-size: 2.5rem
   }
@@ -255,12 +264,6 @@
   height: 70vh;
   padding: 20px 10%;
 
-  & .divar {
-    background-color: $color-primary;
-    width: 2px;
-    height: 55px;
-    transform: translate(-27px,-50px);
-  }
 
   & img {
     position: absolute;
@@ -271,24 +274,34 @@
 
   &-text {
     display: none;
+    font-size: 0.8rem;
   }
 
   &-mt {
    top: 70px;
    color: $color-primary;
+  }
 
-   h5 {
-    font-size: 1.5rem;
+  &-title {
+    font-size: 1.3rem;
+    &:hover {
+      transform: translateY(-20px);
+     }
    }
-   h5:hover {
-    transform: translateY(-10px);
-   }
-   h5:hover + .parallax-text {
+ 
+   .parallax-title:hover + .parallax-text {
        display: block; 
    }
 
   }
-}
+
+  .divar {
+    width: 1px;
+    height: 50px;
+    background-color: $color-primary;
+    transform: translate(-10px,60px);
+   }
+
 
 
 .drivers{
@@ -297,13 +310,15 @@
   width: 100vw;
   height: 95vh;
 
-  & h1 {
-    font-size: 3rem;
+  & h2 {
+    font-size: 2.2rem;
   }
 
   &-text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 40px;
+    text-align: justify;
+    width: 37vw;
   }
   &-img {
     border-radius: 20px;
@@ -314,7 +329,7 @@
     color: $color-primary;
     height: 60px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 7px;
     
     &:hover {
       background-color: #0984e3;
@@ -328,19 +343,20 @@
   height: 90vh;
 
   &-title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin-bottom: 40px;
+    padding: 5px 15px;
   }
 
   & img {
     border-radius: 15px;
-    width: 25vw;
+    width: 21vw;
+    margin-right: 10px;
   }
 
   &-card:hover {
     cursor: pointer;
-    background-color: $color-primary;
-    border: 5px solid rgb(250, 250, 250);
+    box-shadow: 10px 25px 30px rgba(210, 210, 200, 0.6); 
   }
 
   & .card-body:hover {
@@ -349,6 +365,8 @@
 
   & p {
     font-size: 1.3rem;
+    text-align: justify;
+  
   }
 }
 
@@ -356,11 +374,11 @@
 .cities {
   @include section-blog;
   height: 50vh;
-
+  
   & img {
     position: absolute;
     height: 60vh;
-    width: 100vw;
+    margin: 20px -40px;
   }
 
   &-title {
@@ -371,10 +389,11 @@
 
   &-fa-text {
     @include city-text;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   &-en-text {
     @include city-text;
+    font-size: 1.1rem;
   }
 }
 
@@ -382,9 +401,10 @@
 .footer {
     position: relative;
     background-color: $color-black;
-    height: 72vh;
+    height: 80vh;
     width: 100vw;
     top: 78vw;
+    padding: 10px 50px;
 
     &-img {
       margin-top: 40px;
@@ -393,6 +413,7 @@
 
     &-text a {
       color: $color-primary;
+      
      
       &:hover {
         text-decoration: none;
@@ -408,11 +429,17 @@
     }
 
     &-links {
+
       & img {
         width: 20px;
-        transform: translateX(160px);
-        margin: 30px 10px;
+        transform: translateX(185px);
+        margin: 40px 5px;
+        // padding: 2px;
       }
-      
+
    }
+
+   &-p {
+    padding: 5px 20px;
+  }
  }

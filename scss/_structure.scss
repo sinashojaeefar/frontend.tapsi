@@ -28,7 +28,8 @@ $font-sahel: Sahel, Tahoma;
         border-radius: 10px;
         height: 50px;
         margin-right: 20px;
-        width: 20vw;
+        width: 17vw;
+        font-size: 1rem;
 }
 
 @mixin city-text{
@@ -47,7 +48,7 @@ $font-sahel: Sahel, Tahoma;
 @mixin section-blog {
     position: relative;
     top: 70vw;
-    width: 100vw;
+    width: 100%;
 }
 
 * {

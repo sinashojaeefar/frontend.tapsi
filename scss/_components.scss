@@ -113,11 +113,12 @@
   
   .parallax-mt h5 {
     font-size: 1rem;
-    margin-left: 10vw;
+    margin-left: 4vw;
   }
 
   .vouchers {
     margin-bottom: 14vw;
+
   }
   
   }
@@ -145,18 +146,19 @@
   
     .content-container {
       width: 55vw;
-      height: 50vh;
+      height: 47vh;
       right: 7rem;
+      top: 8vw;
   
     }
   
     .content-container .btn-dl {
-      width: 18vw;
+      width: 20vw;
       font-size: 0.55rem;
     }
   
     .content-container .btn-dl-black {
-      width: 18vw;
+      width: 20vw;
       font-size: 0.55rem;
     }
   
@@ -173,7 +175,7 @@
     
     .services__title {
       font-size: 1.5rem;
-      width: 18vw;
+      // width: 27vw;
     }
     
     .services .feature__title {
@@ -190,6 +192,14 @@
       width: 20vw;
     }
   
+    .corporate {
+      & img {
+        margin: 190px 10px;
+        width: 90vw;
+        padding: 10% 7%;
+        
+      }
+    }
     .corporate .btn-orange-lg {
       width: 22vw;
     }
@@ -207,6 +217,25 @@
 
   .cities {
     height: 65vh;
+
+    &-fa-text {
+      font-size: 1.1rem;
+    }
+    &-en-text {
+
+      font-size: 0.95rem;
+    }
+  }
+
+  .parallax-mt h5 {
+    font-size: 1rem;
+    margin-left: 2vw;
+  }
+
+  .vouchers {
+    & .btn-orange-lg {
+      width: 25vw;
+    }
   }
 }
   
@@ -237,8 +266,9 @@
   
     .content-container {
       width: 45vw;
-      height: 70vh;
-      right: 7rem;
+      height: 63vh;
+      right: 12rem;
+      top: 10vw;
     }
   
     .content-container .content-text {
@@ -256,33 +286,128 @@
       font-size: 0.27rem;
       margin-right: 50px;
     }
+
+    .img-header {
+      display: none;
+    }
+
+    .feature__text {
+      font-size: 1.5rem;
+      // width: 67vw;
+      text-align: justify;
+    }
+
+    .feature__image {
+      display: none;
+    }
   
+    .corporate {
+      height: 100vh;
+      margin-bottom: 35vw;
+
+      &-title {
+        font-size: 1.9rem;
+        transform: translate(10vw, 39vw);
+      }
+      &-text {
+        transform: translate(10vw, 39vw);
+      }
+
+      & .text-orange {
+        transform: translate(10vw, 39vw);
+      }
+
+      & .btn-orange-lg {
+        transform: translate(10vw, 40vw);
+        width: 28vw;
+      }
+
+      & img {
+       transform: translate(-10vw, -100vw);
+        
+      }
+
+  
+    }
     .vouchers {
       top: 170px;
       width: 95vw;
       height: 90vh;
-      margin-bottom: 10vw;
-    }
-  
-    .vouchers img{
-      width: 10vw;
-    }
-    
-    .vouchers-title {
-      font-size: 1.5rem;
-    }
-    
-    .vouchers-text {
-      font-size: 1rem;
-      line-height: 25px;
+      margin-bottom: 20vw;
+
+      &-title {
+        font-size: 1.9rem;
+        transform: translate(10vw, 6vw);
+      }
+      &-text {
+        transform: translate(10vw, 8vw);
+      }
+
+      & .btn-orange-lg {
+        transform: translate(10vw, 9vw);
+      }
+
+      & img {
+       transform: translate(5vw, -5vw);
+       width: 90vw;
+        
+      }
     }
 
+
     .drivers{
-      top: 5vw;
+      top: 7vw;
       margin-bottom: 150vw;
+
+      & h2 {
+        font-size: 1.5rem;
+        transform: translateY(55vw);
+      }
+      & h3 {
+       
+        transform: translateY(55vw);
+        
+      }
+      & p{
+        transform: translateY(55vw);
+      }
+      & .btn-blue-lg {
+        transform: translateY(57vw);
+      }
+      &-text {
+        font-size: 1.1rem;
+        width: 50vw;
+        transform: translate(10vw,55vw);
+      }
+
+      & img {
+        transform: translate(3vw, -190vw);
+        width: 65vw;
+      }
   }
 
     .cities {
       height: 60vh;
+
+      
+    &-fa-text {
+      font-size: 0.95rem;
     }
+    &-en-text {
+
+      font-size: 0.75rem;
+    }
+    }
+
+    .parallax-mt h5 {
+      font-size: 1rem;
+      margin-left: -1vw;
+    }
+
+    .footer {
+      height: 85vh;
+    }
+
+
+ 
   }
